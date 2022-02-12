@@ -20,7 +20,8 @@ services:
             - mssql
             - mssqlscripts
         ports:
-            - "443:8080"
+            - "80:80"
+            - "443:443"
         environment:
             - KEYCLOAK_USER=admin
             - KEYCLOAK_PASSWORD=admin
